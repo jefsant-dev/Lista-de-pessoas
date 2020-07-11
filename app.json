@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "meu-app",
-    "slug": "meu-app",
+    "name": "meuApp",
+    "slug": "meuApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +10,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+	"platforms":[
+		"ios",
+		"android"
+	],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,10 +21,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+	  "bundleIdentifier": "com.jefe.meuapp"
     },
+	"android": {
+		"package": "com.jefe.meuapp"
+	},
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-  }
+    },
+    "description": "teste"
+	}
 }
